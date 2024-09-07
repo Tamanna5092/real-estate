@@ -1,9 +1,16 @@
 import React from 'react';
+import Banner from '../Pages/Banner';
+import Feature from '../Pages/Feature';
+import Hospitality from '../Pages/Hospitality';
+import Agent from '../Pages/Agent';
 
 const Home = () => {
     return (
         <div>
-            <h1 className="text-3xl">This is home Component</h1>
+             <Banner></Banner>
+             <Feature></Feature>
+             <Hospitality></Hospitality>
+             <Agent></Agent>
         </div>
     );
 };
