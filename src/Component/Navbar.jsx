@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import img from '../assets/Asset1.png'
 
 const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to={'/'}>Home</NavLink>
       </li>
       <li>
         <NavLink>Hotels</NavLink>
@@ -21,8 +22,7 @@ const Navbar = () => {
       </li>
     </>
   );
-  return (
-    <div>
+  return ( 
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -49,16 +49,15 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="text-xl"><img className="w-34 h-16" src={img} alt="" /></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn">Login</a>
         </div>
       </div>
-    </div>
   );
 };
 

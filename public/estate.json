@@ -1,0 +1,215 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Modern Villa with Pool and Garden",
+    "segment_name": "Luxury Homes",
+    "description": "This breathtaking villa offers an exquisite blend of modern architecture and natural beauty. Featuring an expansive living space, this home includes a private swimming pool, a beautifully landscaped garden, and floor-to-ceiling windows that allow abundant natural light. The villa is situated in a prestigious neighborhood, offering both privacy and proximity to high-end shopping districts and fine dining. Ideal for those seeking luxury and comfort.",
+    "price": "$1,500,000",
+    "status": "sale",
+    "area": "2500 sqft",
+    "land_size": "1680 sqft",
+    "year_built": 1980,
+    "location": "Beverly Hills, CA",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "garden",
+      "garage",
+      "home theater",
+      "guest house"
+    ],
+    "image": "https://i.ibb.co.com/KGPKVbv/Luxury-Homes.jpg"
+  },
+  {
+    "id": 2,
+    "estate_title": "Cozy City Apartment with Skyline Views",
+    "segment_name": "Apartments",
+    "description": "Located in the heart of downtown, this cozy one-bedroom apartment provides stunning skyline views and modern amenities. The apartment features an open-concept living space, high-end kitchen appliances, and a private balcony to enjoy your morning coffee or evening sunsets. This property is perfect for young professionals or couples looking for a comfortable and convenient city lifestyle, just steps away from top restaurants, entertainment, and transportation.",
+    "price": "$2,000/month",
+    "status": "rent",
+    "area": "800 sqft",
+    "land_size": "380 sqft",
+    "year_built": 2010,
+    "location": "New York, NY",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "balcony",
+      "gym",
+      "24-hour security",
+      "rooftop terrace"
+    ],
+    "image": "https://i.ibb.co.com/tq2gd3r/Apartments.jpg"
+  },
+  {
+    "id": 3,
+    "estate_title": "Spacious Family Home with Large Backyard",
+    "segment_name": "Family Homes",
+    "description": "This spacious 4-bedroom home is ideal for families looking for a tranquil and comfortable lifestyle. Located in a quiet, family-friendly neighborhood, the home features a large backyard perfect for kids to play, a modern kitchen with high-end appliances, and a cozy living room with a fireplace. The house is close to schools, parks, and shopping centers, making it an ideal location for raising a family. The property also boasts a two-car garage and a deck perfect for outdoor dining.",
+    "price": "$750,000",
+    "status": "sale",
+    "area": "3200 sqft",
+    "land_size": "2080 sqft",
+    "year_built": 1990,
+    "location": "Austin, TX",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "garden",
+      "garage",
+      "fireplace",
+      "deck",
+      "playroom"
+    ],
+    "image": "https://i.ibb.co.com/DVR0r47/Family-Homes.jpg"
+  },
+  {
+    "id": 4,
+    "estate_title": "Beachside Cottage with Private Beach Access",
+    "segment_name": "Vacation Homes",
+    "description": "Nestled along the stunning coastline, this charming beachside cottage offers private beach access and panoramic ocean views. With 2 bedrooms and a large deck perfect for outdoor relaxation, this property is the ultimate getaway for those seeking peace and serenity. The cottage features a cozy living area, a fully equipped kitchen, and is tastefully decorated with coastal décor. Enjoy long walks on the beach, sunsets from the deck, and the sound of waves right from your home.",
+    "price": "$450,000",
+    "status": "sale",
+    "area": "1500 sqft",
+    "land_size": "700 sqft",
+    "year_built": 2012,
+    "location": "Miami, FL",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "swimming pool",
+      "private beach",
+      "deck",
+      "outdoor shower"
+    ],
+    "image": "https://i.ibb.co.com/MfyWXGd/Vacation-Homes.jpg"
+  },
+  {
+    "id": 5,
+    "estate_title": "Luxury Penthouse with Rooftop Pool",
+    "segment_name": "Penthouses",
+    "description": "Experience unmatched luxury in this stunning penthouse located in the most exclusive part of the city. This residence boasts 3 bedrooms, a private rooftop pool, and floor-to-ceiling windows offering panoramic city views. The open-plan living area includes a gourmet kitchen equipped with top-of-the-line appliances, and the master suite features a spacious walk-in closet and a spa-like bathroom. Perfect for those seeking an upscale urban lifestyle with privacy and high-end amenities.",
+    "price": "$3,200,000",
+    "status": "sale",
+    "area": "4000 sqft",
+    "land_size": "3180 sqft",
+    "year_built": 1950,
+    "location": "Los Angeles, CA",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "rooftop terrace",
+      "home theater",
+      "gym",
+      "wine cellar"
+    ],
+    "image": "https://i.ibb.co.com/m6vrw9k/Penthouses.jpg"
+  },
+  {
+    "id": 6,
+    "estate_title": "Mountain Lodge with Scenic Views",
+    "segment_name": "Mountain Retreats",
+    "description": "Escape to nature in this rustic mountain lodge that offers breathtaking views of the surrounding hills and forests. Perfect for adventure seekers or those looking for a peaceful retreat, this lodge features 3 bedrooms, a spacious living room with a stone fireplace, and a large deck for outdoor dining. The lodge is fully furnished with rustic décor, offering comfort and warmth. Hiking trails, lakes, and wildlife surround the area, making it a perfect escape from the hustle and bustle of city life.",
+    "price": "$1,100,000",
+    "status": "sale",
+    "area": "2800 sqft",
+    "land_size": "1800 sqft",
+    "year_built": 1987,
+    "location": "Aspen, CO",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "fireplace",
+      "deck",
+      "hot tub",
+      "game room",
+      "garage"
+    ],
+    "image": "https://i.ibb.co.com/MMBwNXb/Mountain-Retreats.jpg"
+  },
+  {
+    "id": 7,
+    "estate_title": "Urban Loft with Industrial Design",
+    "segment_name": "Lofts",
+    "description": "This urban loft combines modern living with industrial design elements, featuring exposed brick walls, large windows, and an open floor plan. The 2-bedroom loft is perfect for creative professionals or those looking for a unique living space. Located in a vibrant neighborhood, the loft is within walking distance to art galleries, cafes, and nightlife. The kitchen is equipped with stainless steel appliances, and the living area offers plenty of space for entertaining guests.",
+    "price": "$850,000",
+    "status": "sale",
+    "area": "1800 sqft",
+    "land_size": "800 sqft",
+    "year_built": 2020,
+    "location": "Brooklyn, NY",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "balcony",
+      "gym",
+      "24-hour security"
+    ],
+    "image": "https://i.ibb.co.com/Lth15xB/Lofts.jpg"
+  },
+  {
+    "id": 8,
+    "estate_title": "Lakefront Cabin with Dock",
+    "segment_name": "Cabins",
+    "description": "This charming lakefront cabin offers direct access to a private dock and breathtaking water views. Perfect for weekend getaways or long vacations, this cabin features 2 bedrooms, a cozy fireplace, and a spacious living area. The large deck is ideal for outdoor dining, and the dock provides opportunities for fishing, boating, or just enjoying the serene surroundings. Located near a nature reserve, this property is a paradise for outdoor enthusiasts.",
+    "price": "$600,000",
+    "status": "sale",
+    "area": "1700 sqft",
+    "land_size": "910 sqft",
+    "year_built": 1970,
+    "location": "Lake Tahoe, NV",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "fireplace",
+      "deck",
+      "dock",
+      "private lake access"
+    ],
+    "image": "https://i.ibb.co.com/G9cR4bh/Lakefront-Cabin.jpg"
+  },
+  {
+    "id": 9,
+    "estate_title": "Contemporary Townhouse in Gated Community",
+    "segment_name": "Townhouses",
+    "description": "This contemporary townhouse is located in an exclusive gated community and offers modern design with upscale amenities. With 3 bedrooms and an open-concept living area, this townhouse is perfect for families or professionals seeking a low-maintenance yet luxurious lifestyle. The kitchen is equipped with high-end appliances, and the private patio is perfect for outdoor gatherings. Residents enjoy access to a community pool, gym, and children's playground.",
+    "price": "$900,000",
+    "status": "sale",
+    "area": "21000 sqft",
+    "land_size": "15780 sqft",
+    "year_built": 1998,
+    "location": "Orlando, FL",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "gym",
+      "community pool",
+      "private patio",
+      "garage"
+    ],
+    "image": "https://i.ibb.co.com/dQqB0Pg/Contemporary-Townhouse.jpg"
+  },
+  {
+    "id": 10,
+    "estate_title": "Historic Colonial Home with Garden",
+    "segment_name": "Historic Homes",
+    "description": "This beautifully restored colonial home is a true piece of history, offering 5 bedrooms, 3 bathrooms, and over 4000 sqft of living space. The home features classic colonial architecture with modern updates, including a gourmet kitchen, hardwood floors, and a sunroom. The large garden is meticulously landscaped, providing a serene outdoor space. Located in a quiet neighborhood, this home is perfect for those who appreciate timeless beauty and historical significance.",
+    "price": "$1,800,000",
+    "status": "sale",
+    "area": "4000 sqft",
+    "land_size": "2480 sqft",
+    "year_built": 2008,
+    "location": "Charleston, SC",
+    "facilities": [
+      "living room",
+      "kitchen",
+      "garden",
+      "sunroom",
+      "garage",
+      "library"
+    ],
+    "image": "https://i.ibb.co.com/yXwMwKj/Historic-Colonial-Home-with-Garden.jpg"
+  }
+]
