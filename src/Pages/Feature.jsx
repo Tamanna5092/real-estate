@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Feature = ({estate}) => {
-    const {estate_title, segment_name, status, image, area, location, id, land_size, build_year, price} = estate;
+    const {segment_name, status, image, area, location, id, land_size, price} = estate;
     return (
         <div>
-            <div className="card card-compact bg-base-100 w-96 h- shadow-xl">
+            <div className="card card-compact bg-base-100 w-96 h-[480px] shadow-xl">
         <figure>
           <img
-          className='w-full'
+          className='w-96 h-[270px]'
             src={image}
             alt=""
           />
@@ -17,14 +17,14 @@ const Feature = ({estate}) => {
           <p className='text-2xl'>{segment_name}</p>
           <p>{price}</p>
           <p>Status for: {status}</p>
-          <div className='flex justify-between'>
+          <div className='flex-row gap-20 lg:flex'>
           <p>Area: {area}</p>
           <p>Land Size: {land_size}</p>
           </div>
           <p>Location: {location}</p>
         </div>
         <div className="card-actions p-6">
-        <Link to={`feature/${id}`} className='text-center text-white bg-[#1d1f1f] hover:bg-red-600 px-6 py-4 rounded-md mb-6'>View Property</Link>
+        <Link to={`feature/${id}`} className='text-center text-white bg-gray-800 hover:bg-red-600 px-6 py-4 rounded-md'>View Property</Link>
     </div>
       </div>
         </div>

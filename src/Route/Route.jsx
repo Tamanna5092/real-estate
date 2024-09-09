@@ -4,6 +4,8 @@ import Root from '../Root/Root';
 import Home from '../Component/Home';
 import FetureDetails from '../Pages/FetureDetails';
 import ErrorPage from '../Component/ErrorPage';
+import Contract from '../Pages/Contract';
+import About from '../Pages/About';
 
 const Route = createBrowserRouter([
     {
@@ -20,6 +22,14 @@ const Route = createBrowserRouter([
           path: '/feature/:id',
           element: <FetureDetails></FetureDetails>,
           loader: () => fetch(`../estate.json`)
+        },
+        {
+          path: '/about',
+          element: <About></About>
+        },
+        {
+          path: '/contract',
+          element: <Contract></Contract>
         }
       ]
     },

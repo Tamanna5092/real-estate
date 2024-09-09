@@ -8,17 +8,17 @@ const Navbar = () => {
       <li>
         <NavLink to={'/'}>Home</NavLink>
       </li>
+      {/* <li>
+        <NavLink>Login</NavLink>
+      </li> */}
+      {/* <li>
+        <NavLink>Register</NavLink>
+      </li> */}
       <li>
-        <NavLink>Hotels</NavLink>
+        <NavLink to={'/about'}>About</NavLink>
       </li>
       <li>
-        <NavLink>Resorts</NavLink>
-      </li>
-      <li>
-        <NavLink>About</NavLink>
-      </li>
-      <li>
-        <NavLink>Contract Us</NavLink>
+        <NavLink to={'/contract'}>Contract Us</NavLink>
       </li>
     </>
   );
