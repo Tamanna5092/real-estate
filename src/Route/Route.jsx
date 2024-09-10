@@ -6,6 +6,8 @@ import FetureDetails from '../Pages/FetureDetails';
 import ErrorPage from '../Component/ErrorPage';
 import Contract from '../Pages/Contract';
 import About from '../Pages/About';
+import Login from '../Authentication/Login';
+import Register from '../Authentication/Register';
 
 const Route = createBrowserRouter([
     {
@@ -30,6 +32,14 @@ const Route = createBrowserRouter([
         {
           path: '/contract',
           element: <Contract></Contract>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
+        },
+        {
+          path: '/register',
+          element: <Register></Register>
         }
       ]
     },

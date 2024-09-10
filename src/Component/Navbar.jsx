@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import img from '../assets/Asset1.png'
 
 const Navbar = () => {
@@ -8,12 +8,9 @@ const Navbar = () => {
       <li>
         <NavLink to={'/'}>Home</NavLink>
       </li>
-      {/* <li>
-        <NavLink>Login</NavLink>
-      </li> */}
-      {/* <li>
-        <NavLink>Register</NavLink>
-      </li> */}
+      <li>
+        <NavLink to={'/register'}>Register</NavLink>
+      </li>
       <li>
         <NavLink to={'/about'}>About</NavLink>
       </li>
@@ -55,7 +52,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Login</a>
+          <Link to={'/login'} className="btn">Login</Link>
         </div>
       </div>
   );
