@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const Feature = ({estate}) => {
     const {segment_name, status, image, area, location, id, land_size, price} = estate;
     return (
-        <div>
-            <div className="card card-compact bg-base-100 w-96 h-[480px] shadow-xl">
+        <div className='px-8 md:px-0'>
+            <div className="card card-compact bg-base-100 h-[480px] shadow-xl">
         <figure>
           <img
-          className='w-96 h-[270px]'
+          className='w-full h-[270px]'
             src={image}
             alt=""
           />
