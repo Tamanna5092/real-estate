@@ -11,14 +11,16 @@ const Register = () => {
   
   const handleRegister = (e) => {
     e.preventDefault();
-  //   const username = e.target.username.value;
-	// const email = e.target.email.value;
-	// const photoURL = e.target.photoURL.value;
-	// const password = e.target.password.value;
-	// const confiremPassword = e.target.confirem_password.value;
-	// console.log(username, email, photoURL,password, confiremPassword )
+    const username = e.target.username.value;
+	const email = e.target.email.value;
+	const photoURL = e.target.photoURL.value;
+	const password = e.target.password.value;
+	const confiremPassword = e.target.confirem_password.value;
+	console.log(username, email, photoURL,password, confiremPassword )
 
   createUser(email, password)
+  .then(result => console.log(result.user))
+  .catch(error => console.error(error.message))
   
   };
 
