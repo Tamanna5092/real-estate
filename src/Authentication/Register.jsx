@@ -6,8 +6,9 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
 
-  const { createUser, googleLogin, githubLogin } = useContext(AuthContext)
+  const { createUser, googleLogin, githubLogin, twitterLogin } = useContext(AuthContext)
   const [showPassword, setShowPassword] = useState(false)
+  const [registerError, setRegisterError] = useState('')
   
   const handleRegister = (e) => {
     e.preventDefault();
@@ -15,12 +16,30 @@ const Register = () => {
 	const email = e.target.email.value;
 	const photoURL = e.target.photoURL.value;
 	const password = e.target.password.value;
-	const confiremPassword = e.target.confirem_password.value;
-	console.log(username, email, photoURL,password, confiremPassword )
+	const confirmPassword = e.target.confirm_password.value;
+	console.log(username, email, photoURL,password, confirmPassword )
+
+
+  if(password.length < 6){
+    setRegisterError ('Your password must be 6 characters')
+    return
+  }
+  else if(!/^(?=.*[A-Z])(?=.*\d).+$/.test(password)){
+    setRegisterError ('Password must contain at least one uppercase letter and one number.')
+    return
+  }
+  else if(password != confirmPassword){
+    setRegisterError("Passwords didn't match.")
+    return
+  }
+  setRegisterError('')
 
   createUser(email, password)
   .then(result => console.log(result.user))
-  .catch(error => console.error(error.message))
+  .catch(error => {
+    console.error(error.message)
+    setRegisterError(error.message.split("/")[1].replace(")", ""))
+  })
   
   };
 
@@ -92,7 +111,11 @@ const Register = () => {
                 required
                 className="w-full px-4 py-3 rounded-md border dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
               />
-              <span onClick={()=> setShowPassword(!showPassword)} className="absolute right-3 top-3"><FaEye className="h-6 w-4"></FaEye></span>
+              <span onClick={()=> setShowPassword(!showPassword)} className="absolute right-3 top-4">
+                {
+                  showPassword? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                }
+                </span>
              </div>
             </div>
             <div className="space-y-1 text-sm">
@@ -101,20 +124,22 @@ const Register = () => {
               </label>
               <div className="relative">
               <input
-                type="password"
-                name="confirem_password"
+                type={showPassword ? "text" : "password"}
+                name="confirm_password"
                 id="confirm_password"
-                placeholder="confirem_Password"
+                placeholder="confirm_Password"
                 required
                 className="w-full px-4 py-3 rounded-md border dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
               />
-              <span className="absolute right-3 top-3"><FaEye className="h-6 w-4"></FaEye></span>
               </div>
             </div>
             <button className="block w-full p-3 text-center bg-info text-white rounded-sm dark:text-gray-50 dark:bg-violet-600">
               Sign in
             </button>
           </form>
+          {
+             registerError && <p className="text-red-700">{registerError}</p>
+          }
           <div className="flex items-center pt-4 space-x-1">
             <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
             <p className="px-3 text-sm dark:text-gray-600">
@@ -132,7 +157,7 @@ const Register = () => {
                 <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
               </svg>
             </button>
-            <button aria-label="Log in with Twitter" className="p-3 rounded-sm">
+            <button onClick={()=>twitterLogin()} aria-label="Log in with Twitter" className="p-3 rounded-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
