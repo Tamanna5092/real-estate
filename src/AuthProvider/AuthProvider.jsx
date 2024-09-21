@@ -50,7 +50,7 @@ const AuthProvider = ({children}) => {
         signOutUser,
         googleLogin,
         githubLogin,
-        twitterLogin
+        twitterLogin,
     }
 
     return (

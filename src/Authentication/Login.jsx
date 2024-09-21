@@ -1,20 +1,31 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Login = () => {
   const {logInUser} = useContext(AuthContext)
+  const [loginError, setLoginError] = useState('')
 
   const handleLogin = e => {
     e.preventDefault()
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password)
+
+
+    setLoginError("") 
 
     logInUser(email, password)
+    .then(result => {
+      console.log(result.user)
+      toast('Login successfully!')
+    })
+    .catch(error => {
+      console.error(error)
+      setLoginError('Please input a valid password.')
+    })
   }
-
-
+ 
     return (
         <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
@@ -41,13 +52,17 @@ const Login = () => {
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
+          {
+        loginError && <p className='text-red-700 mt-4'>{loginError}</p>
+      }
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
+          <ToastContainer/>
         </div>
       </form>
       <p className="text-center mb-6 sm:px-6 dark:text-gray-600">
-            Dontn have an account?{" "}
+            Don't have an account?{" "}
             <Link to={'/register'}
               rel="noopener noreferrer"
               href="#"
