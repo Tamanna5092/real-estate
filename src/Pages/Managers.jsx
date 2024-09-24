@@ -1,7 +1,7 @@
 import React from "react";
 import { BsX } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
-import { LiaLinkedin } from "react-icons/lia";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Managers = ({manager}) => {
     const {name, job, image, about, social_links} = manager;
@@ -20,9 +20,9 @@ const Managers = ({manager}) => {
           <p className="text-[#949494]">{about.slice(0, 100)}</p>
           {/* socail links */}
            <div className="flex gap-6 mt-2">
-            <FaFacebook className="w-5 h-5 cursor-pointer"></FaFacebook>
-             <BsX className="w-5 h-5 cursor-pointer"></BsX>
-             <LiaLinkedin className="w-5 h-5 cursor-pointer"></LiaLinkedin>
+            <FaFacebook className="w-5 h-5 cursor-pointer hover:text-red-500"></FaFacebook>
+             <FaXTwitter className="w-5 h-5 cursor-pointer hover:text-red-500"></FaXTwitter>
+             <FaLinkedinIn className="w-5 h-5 cursor-pointer hover:text-red-500"></FaLinkedinIn>
            </div>
         </div>
       </div>

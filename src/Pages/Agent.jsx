@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../assets/regiser-img.jpeg";
 import img1 from "../assets/agent1.webp";
-import { MdCall } from "react-icons/md";
+import { LuPhoneCall } from "react-icons/lu";
 
 const Agent = () => {
   return (
@@ -32,9 +32,9 @@ const Agent = () => {
                 <h3 className="roboto text-lg font-medium">Noah Swan</h3>
                 <p className="flex justify-center items-center text-2xl font-medium">
                   <span>
-                    <MdCall className="w-6 h-6"></MdCall>
-                  </span>{" "}
-                  123456789
+                    <LuPhoneCall className="w-6 h-6 mr-2"></LuPhoneCall>
+                  </span>{""}
+                  123-456-789
                 </p>
               </div>
             </div>
@@ -46,9 +46,9 @@ const Agent = () => {
                 <h3 className="roboto text-lg font-medium">Anmita Nancy</h3>
                 <p className="flex justify-center items-center text-2xl font-medium">
                   <span>
-                    <MdCall className="w-6 h-6"></MdCall>
-                  </span>{" "}
-                  0987654321
+                    <LuPhoneCall className="w-6 h-6 mr-2"></LuPhoneCall>
+                  </span>{""}
+                  098-765-4321
                 </p>
               </div>
             </div>
