@@ -6,14 +6,21 @@ const Features = () => {
   const estates = useLoaderData();
   return (
     <div className="mt-20">
-      <h1 className="text-center text-3xl my-6">Types of hospitality real estate</h1>
-      <p className="my-6">Hospitality real e­state encompasses a range­ of properties that are spe­cifically designed to cater to ne­eds related to re­laxation, pleasure, business me­etings, events, and confe­rences. This diverse­ sector includes eve­rything from luxurious hotels to cozy restaurants, offering ample­ opportunities for growth and developme­nt.</p>
-       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {
-          estates.map(estate => <Feature key={estate.id} estate={estate}></Feature>)
-        }
-       </div>
-       <button>Show All Features</button>
+      <h1 className="roboto text-center text-4xl font-bold my-6">
+        Star Land Line Hospitality Resort & Hostel
+      </h1>
+      <p className="my-6 text-center">
+        Star Land Line Hospitality offers a perfect blend of comfort and luxury.
+        With cozy accommodations and top-notch amenities, it’s ideal for both
+        relaxation and adventure. Whether you're staying in our hostel or
+        resort, enjoy exceptional service and a welcoming atmosphere, making
+        your stay truly unforgettable.
+      </p>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {estates.map((estate) => (
+          <Feature key={estate.id} estate={estate}></Feature>
+        ))}
+      </div>
     </div>
   );
 };

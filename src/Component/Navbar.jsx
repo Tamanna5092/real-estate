@@ -1,67 +1,76 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import img from '../assets/Asset1.png'
+import img from "../assets/Asset1.png";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
-  const {user, signOutUser} = useContext(AuthContext)
+  const { user, signOutUser } = useContext(AuthContext);
 
   const navLinks = (
     <>
       <li>
-        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
-        <NavLink to={'/register'}>Register</NavLink>
+        <NavLink to={"/register"}>Register</NavLink>
       </li>
       <li>
-        <NavLink to={'/about'}>About</NavLink>
+        <NavLink to={"/about"}>About</NavLink>
       </li>
       <li>
-        <NavLink to={'/contract'}>Contract Us</NavLink>
+        <NavLink to={"/contract"}>Contract Us</NavLink>
       </li>
     </>
   );
-  return ( 
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+  return (
+    <div className="navbar bg-base-100">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              {navLinks}
-            </ul>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
           </div>
-          <a className="text-xl"><img className="w-34 h-16" src={img} alt="" /></a>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            {navLinks}
+          </ul>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
-        </div>
-        <div className="navbar-end">
-          {
-            user ? <button onClick={()=> signOutUser()} className="btn">{user.email}Sign Out</button>
-             : 
-             <Link to={'/login'} className="btn">Login</Link>
-          }
-        </div>
+        <a className="text-xl">
+          <img className="w-34 h-16" src={img} alt="" />
+        </a>
       </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal gap-2 px-1">{navLinks}</ul>
+      </div>
+      <div className="navbar-end">
+        {user ? (
+          <button onClick={() => signOutUser()} className="btn">
+            {user.email}Sign Out
+          </button>
+        ) : (
+          <Link
+            to={"/login"}
+            className="btn text-white bg-red-500 px-6 font-bold montserrat hover:bg-gray-800"
+          >
+            Login
+          </Link>
+        )}
+      </div>
+    </div>
   );
 };
 

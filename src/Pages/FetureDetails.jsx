@@ -8,29 +8,36 @@ const FetureDetails = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="grid md:grid-cols-2 gap-6 my-10 bg-base-100 shadow-xl">
-        <div className="">
+      <div className="grid md:grid-cols-2 gap-6 my-10 bg-gray-100 shadow-xl">
+        <div className="border-4">
           <figure>
-            <img className="w-full h-[500px]" src={feature.image} alt="" />
+            <img className="w-full" src={feature.image} alt="" />
           </figure>
         </div>
         <div className=" p-4">
-          <h2 className="text-3xl">{feature.estate_title}</h2>
-          <p className="text-2xl">{feature.segment_name}</p>
-          <p>{feature.description}</p>
-          <p>{feature.price}</p>
-          <p>Status for: {feature.status}</p>
-          <div className="flex-row gap-20 lg:flex">
+          <h2 className="roboto text-3xl font-bold">{feature.estate_title}</h2>
+          <p className="text-2xl font-medium my-4">{feature.segment_name}</p>
+          <p className="text-base text-gray-500">{feature.description}</p>
+          <p className="text-2xl text-red-500 my-4">{feature.price}</p>
+          <p className="">Status for: {feature.status}</p>
+          <div className="flex-row text-base gap-20 lg:flex">
             <div className="">
-              <p>Area: {feature.area}</p>
-              <p>Location: {feature.location}</p>
+              <p className="my-2">Area: {feature.area}</p>
+              <p className="my-2">Location: {feature.location}</p>
             </div>
             <div className="">
-              <p>Land Size: {feature.land_size}</p>
-              <p>Year built: {feature.year_built}</p>
+              <p className="my-2">Land Size: {feature.land_size}</p>
+              <p className="my-2">Year built: {feature.year_built}</p>
             </div>
           </div>
-          <p>Facilities: {feature.facilities}</p>
+          <p className="text-base">
+            Facilities:
+            {feature.facilities.map((facilitie) => (
+              <div>
+                <li>{facilitie}</li>
+              </div>
+            ))}
+          </p>
         </div>
       </div>
     </div>
