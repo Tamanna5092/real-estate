@@ -9,10 +9,10 @@ const Features = () => {
       <h1 className="roboto text-center text-4xl font-bold my-6">
         Star Land Line Hospitality Resort & Hostel
       </h1>
-      <p className="my-6 text-center">
+      <p className="my-6 text-center text-[#949494]">
         Star Land Line Hospitality offers a perfect blend of comfort and luxury.
         With cozy accommodations and top-notch amenities, it’s ideal for both
-        relaxation and adventure. Whether you're staying in our hostel or
+        relaxation and adventure. Whether you're <br /> staying in our hostel or
         resort, enjoy exceptional service and a welcoming atmosphere, making
         your stay truly unforgettable.
       </p>

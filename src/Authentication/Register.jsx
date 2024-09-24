@@ -134,7 +134,7 @@ const Register = () => {
                 />
               </div>
             </div>
-            <button className="block w-full p-3 text-center bg-info text-white rounded-sm dark:text-gray-50 dark:bg-violet-600">
+            <button className="block w-full p-3 text-center text-white bg-red-500 hover:bg-gray-800 rounded-sm dark:text-gray-50 dark:bg-violet-600">
               Sign in
             </button>
             <ToastContainer />
@@ -146,7 +146,7 @@ const Register = () => {
               to={"/login"}
               rel="noopener noreferrer"
               href="#"
-              className="link link-info font-semibold dark:text-gray-800"
+              className="link hover:text-red-500 text-gray-800 font-semibold dark:text-gray-800"
             >
               Login
             </Link>

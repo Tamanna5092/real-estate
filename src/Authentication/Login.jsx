@@ -78,7 +78,7 @@ const Login = () => {
         loginError && <p className='text-red-700 mt-4'>{loginError}</p>
       }
             </div>
-            <button className="block w-full p-3 text-center bg-primary text-white rounded-sm dark:text-gray-50 dark:bg-violet-600">
+            <button className="block w-full p-3 text-center text-white bg-red-500 hover:bg-gray-800 rounded-sm dark:text-gray-50 dark:bg-violet-600">
               Login
             </button>
             <ToastContainer/>
@@ -124,7 +124,7 @@ const Login = () => {
             <Link to={'/register'}
               rel="noopener noreferrer"
               href="#"
-              className="link link-primary font-semibold dark:text-gray-800"
+              className="link hover:text-red-500 text-gray-800 font-semibold dark:text-gray-800"
             >
               Register
             </Link>

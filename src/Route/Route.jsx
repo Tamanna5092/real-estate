@@ -27,7 +27,8 @@ const Route = createBrowserRouter([
         },
         {
           path: '/about',
-          element: <About></About>
+          element: <About></About>,
+          loader: () => fetch(`../manager.json`)
         },
         {
           path: '/contract',

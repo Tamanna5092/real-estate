@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/JvvchMv/download.jpg",
+      "name": "Alice Thompson",
+      "job": "Project Manager",
+      "about": "Alice oversees the planning, execution, and completion of projects. She ensures that deadlines are met, resources are allocated properly, and the project stays within budget.",
+      "social_links": {
+        "LinkedIn": "https://linkedin.com/in/alice-thompson",
+        "Twitter": "https://twitter.com/alicet_pm",
+        "Facebook": "https://facebook.com/alice.thompson.pm"
+      }
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/q7qSyGN/istockphoto-1391718981-612x612.jpg",
+      "name": "John Rivera",
+      "job": "Operations Manager",
+      "about": "John is responsible for managing the day-to-day operations of the company. He ensures efficiency in workflow, coordinates between departments, and focuses on improving productivity.",
+      "social_links": {
+        "LinkedIn": "https://linkedin.com/in/john-rivera",
+        "Twitter": "https://twitter.com/john_rivera_ops",
+        "Facebook": "https://facebook.com/john.rivera.ops"
+      }
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/Y7421mZ/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg",
+      "name": "Sarah Lee",
+      "job": "HR Manager",
+      "about": "Sarah handles recruitment, employee relations, and benefits management. She ensures that the workplace is compliant with labor laws and fosters a positive work environment.",
+      "social_links": {
+        "LinkedIn": "https://linkedin.com/in/sarah-lee",
+        "Twitter": "https://twitter.com/sarahlee_hr",
+        "Facebook": "https://facebook.com/sarah.lee.hr"
+      }
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/sQY4F6j/mature-businessperson-portrait-formalwear-business-success-successful-man-businesslike-suit-male-for.jpg",
+      "name": "Michael Davis",
+      "job": "Marketing Manager",
+      "about": "Michael develops marketing strategies to promote the company’s products and services. He leads a team to execute campaigns, analyze market trends, and track the success of marketing efforts.",
+      "social_links": {
+        "LinkedIn": "https://linkedin.com/in/michael-davis",
+        "Twitter": "https://twitter.com/michaeldavis_mktg",
+        "Facebook": "https://facebook.com/michael.davis.mktg"
+      }
+    }
+  ]
+  

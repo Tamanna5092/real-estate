@@ -17,7 +17,7 @@ const FetureDetails = () => {
         <div className=" p-4">
           <h2 className="roboto text-3xl font-bold">{feature.estate_title}</h2>
           <p className="text-2xl font-medium my-4">{feature.segment_name}</p>
-          <p className="text-base text-gray-500">{feature.description}</p>
+          <p className="text-base text-[#949494]">{feature.description}</p>
           <p className="text-2xl text-red-500 my-4">{feature.price}</p>
           <p className="">Status for: {feature.status}</p>
           <div className="flex-row text-base gap-20 lg:flex">

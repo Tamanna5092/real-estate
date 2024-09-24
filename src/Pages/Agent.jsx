@@ -11,7 +11,7 @@ const Agent = () => {
           <h1 className="text-3xl text-center">
             Feel Free to Contact Our Agents
           </h1>
-          <p className="my-4">
+          <p className="text-[#d9d4d4] my-4">
             For personalized assistance and to make your experience even
             smoother, please don’t hesitate to contact our agent. Our dedicated
             team is always ready to help you with any inquiries, bookings, or
