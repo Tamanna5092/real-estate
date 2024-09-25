@@ -21,11 +21,6 @@ const AuthProvider = ({children}) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
-    // sign out
-    const signOutUser = () => {
-        setLoading(true)
-        signOut(auth)
-    }
     // google login
     const googleLogin = () => {
         setLoading(true)
@@ -41,14 +36,18 @@ const AuthProvider = ({children}) => {
         setLoading(true)
         return signInWithPopup(auth, twitterProvider)
     }
+    // sign out
+    const signOutUser = () => {
+        signOut(auth)
+    }
     // observ auth state change
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-            console.log('observing current user auth state changen', currentUser) 
                 setUser(currentUser)
+                setLoading(false)
         })
         return () => unsubscribe()
-    })
+    },[])
 
     const authInfo = {
         user,

@@ -8,10 +8,10 @@ const FetureDetails = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="grid md:grid-cols-2 gap-6 my-10 bg-gray-100 shadow-xl">
-        <div className="border-4">
+      <div className="grid md:grid-cols-2 gap-6 my-10 bg-gray-100">
+        <div className="">
           <figure>
-            <img className="w-full" src={feature.image} alt="" />
+            <img className="w-full h-full" src={feature.image} alt="" />
           </figure>
         </div>
         <div className=" p-4">
