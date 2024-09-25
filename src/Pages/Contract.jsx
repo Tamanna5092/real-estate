@@ -2,7 +2,6 @@ import React from 'react';
 import img from '../assets/regiser-img.jpeg'
 import img2 from '../assets/agent1.webp'
 import img3 from '../assets/agent3.jpg'
-import { MdCall } from 'react-icons/md';
 import { LuPhoneCall } from 'react-icons/lu';
 import { GrMapLocation } from 'react-icons/gr';
 import { SlCallIn } from 'react-icons/sl';
@@ -11,41 +10,41 @@ import { BiMessageDots } from 'react-icons/bi';
 const Contract = () => {
     return (
         <div className='max-w-7xl mx-auto'>
-            <h1 className='text-3xl text-center'>Our agent</h1>
             {/* message */}
           <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-6 my-20'>
-            <div>
-                <h1 className='text-3xl'>We provide the most suitable and quality Hospitality</h1>
-                <div className='flex items-center gap-10'>
+            <div className='px-3 md:px-0'>
+                <h1 className='roboto text-5xl font-extrabold my-6'>We provide the most suitable and quality hospitality.</h1>
+                <p className='text-base text-[#949494]'>We provide the most suitable and high-quality hospitality, ensuring that every guest enjoys a comfortable, memorable, and exceptional experience tailored to their needs.</p>
+                <div className='flex items-center gap-10 my-10'>
                     <div>
-                    <GrMapLocation className='w-10 h-10'></GrMapLocation>
+                    <GrMapLocation className='w-10 h-10 text-[#949494]'></GrMapLocation>
                     </div>
                     <div>
-                        <p>Office address</p>
-                        <p>2715 Ash Dr. San Jose, South Dakota 83475</p>
-                    </div>
-                </div>
-                <div className='flex items-center gap-10'>
-                    <div>
-                    <SlCallIn className='w-10 h-10'></SlCallIn>
-                    </div>
-                    <div>
-                        <p>Request a call back</p>
-                        <p>314-555-0123</p>
+                        <p className='text-lg text-[#949494] font-extrabold'>Office address</p>
+                        <p className='text-lg text-[#ffa920]'>2715 Ash Dr. San Jose, South Dakota 83475</p>
                     </div>
                 </div>
-                <div className='flex items-center gap-10'>
+                <div className='flex items-center gap-10 my-10'>
                     <div>
-                    <BiMessageDots className='w-10 h-10'></BiMessageDots>
+                    <SlCallIn className='w-10 h-10 text-[#949494]'></SlCallIn>
                     </div>
                     <div>
-                        <p>Email us</p>
-                        <p>hellosupport@gmail.com</p>
+                        <p className='text-lg text-[#949494] font-extrabold'>Request a call back</p>
+                        <p className='text-3xl font-extrabold text-[#ffa920]'>314-555-0123</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-10 my-10'>
+                    <div>
+                    <BiMessageDots className='w-10 h-10 text-[#949494]'></BiMessageDots>
+                    </div>
+                    <div>
+                        <p className='text-lg text-[#949494] font-extrabold'>Email us</p>
+                        <p className='text-lg text-[#ffa920]'>hellosupport@gmail.com</p>
                     </div>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <img src={'https://i.ibb.co.com/fFQj8pq/mark-contact3.png'} alt="" />
+                <img className='mx-auto' src={'https://i.ibb.co.com/fFQj8pq/mark-contact3.png'} alt="" />
             </div>
           </div>
             {/* contact our agent */}

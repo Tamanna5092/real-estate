@@ -8,6 +8,7 @@ import Contract from '../Pages/Contract';
 import About from '../Pages/About';
 import Login from '../Authentication/Login';
 import Register from '../Authentication/Register';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 const Route = createBrowserRouter([
     {
@@ -22,7 +23,7 @@ const Route = createBrowserRouter([
         },
         {
           path: '/feature/:id',
-          element: <FetureDetails></FetureDetails>,
+          element: <PrivateRoute><FetureDetails></FetureDetails></PrivateRoute>,
           loader: () => fetch(`../estate.json`)
         },
         {
