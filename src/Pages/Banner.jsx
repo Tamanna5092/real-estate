@@ -26,7 +26,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://i.ibb.co.com/jbJF8Gb/pexels-thorsten-technoman-109353-338504.jpg"
+            src="https://i.ibb.co.com/DQ5DfNG/photo-1564013799919-ab600027ffc6.jpg"
             alt=""
           />
         </SwiperSlide>

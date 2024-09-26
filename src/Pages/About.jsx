@@ -20,6 +20,15 @@ const About = () => {
         perfect choice for a relaxing and unforgettable stay. Discover the
         difference with us!
       </p>
+      {/* image gallery */}
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 my-10">
+        <img className="w-full h-96" src="https://i.ibb.co.com/ZdS3ybr/Most-Beautiful-House-in-the-World-0-1200.jpg" alt="" />
+        <img className="w-full h-96" src="https://i.ibb.co.com/DQ5DfNG/photo-1564013799919-ab600027ffc6.jpg" alt="" />
+        <img className="w-full h-96" src="https://i.ibb.co.com/bzGmGF3/florida-house-rent-sale-beautiful-near-beach-make-great-rental-property-189347621.webp" alt="" />
+        <img className="w-full h-96" src="https://i.ibb.co.com/Kjrk5yV/istockphoto-172685185-612x612.jpg" alt="" />
+        <img className="w-full h-96" src="https://i.ibb.co.com/8js2HG2/ai-generative-exterior-of-modern-luxury-house-with-garden-and-beautiful-sky-photo-1.jpg" alt="" />
+        <img className="w-full h-96" src="https://i.ibb.co.com/0FWnFpk/simple-and-beautiful-house-design-the-loft-aesthetic.jpg" alt="" />
+      </div>
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
         <div className="card card-compact text-center text-black py-10">
           <div className="flex items-center justify-center gap-3">
