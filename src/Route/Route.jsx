@@ -4,7 +4,7 @@ import Root from '../Root/Root';
 import Home from '../Component/Home';
 import FetureDetails from '../Pages/FetureDetails';
 import ErrorPage from '../Component/ErrorPage';
-import Blog from '../Pages/Blog';
+import Blogs from '../Pages/Blogs';
 import About from '../Pages/About';
 import Contract from '../Pages/Contract';
 import Login from '../Authentication/Login';
@@ -29,7 +29,8 @@ const Route = createBrowserRouter([
         },
         {
           path: '/blog',
-          element: <Blog></Blog>
+          element: <Blogs></Blogs>,
+          loader: () => fetch(`../blogs.json`)
         },
         {
           path: '/about',
