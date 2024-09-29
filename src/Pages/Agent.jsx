@@ -6,12 +6,12 @@ import { LuPhoneCall } from "react-icons/lu";
 const Agent = () => {
   return (
     <div className="grid md:grid-cols-1 lg:grid-cols-2">
-      <div className="bg-gray-800 text-white px-10 py-32">
+      <div className="  px-10 py-28">
         <div className="">
-          <h1 className="text-3xl text-center">
+          <h1 className="roboto text-3xl text-center font-semibold">
             Feel Free to Contact Our Agents
           </h1>
-          <p className="text-[#d9d4d4] my-4">
+          <p className="text-[#949494] text-base my-6">
             For personalized assistance and to make your experience even
             smoother, please don’t hesitate to contact our agent. Our dedicated
             team is always ready to help you with any inquiries, bookings, or
@@ -30,7 +30,7 @@ const Agent = () => {
               </div>
               <div>
                 <h3 className="roboto text-lg font-medium">Noah Swan</h3>
-                <p className="flex justify-center items-center text-2xl font-medium">
+                <p className="flex justify-center items-center text-2xl text-[#ffa920] font-medium">
                   <span>
                     <LuPhoneCall className="w-6 h-6 mr-2"></LuPhoneCall>
                   </span>{""}
@@ -44,7 +44,7 @@ const Agent = () => {
               </div>
               <div>
                 <h3 className="roboto text-lg font-medium">Anmita Nancy</h3>
-                <p className="flex justify-center items-center text-2xl font-medium">
+                <p className="flex justify-center items-center text-2xl text-[#ffa920] font-medium">
                   <span>
                     <LuPhoneCall className="w-6 h-6 mr-2"></LuPhoneCall>
                   </span>{""}

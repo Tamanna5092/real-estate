@@ -46,11 +46,12 @@ const Register = () => {
 
   return (
     <div className="max-w-7xl mx-auto grid gap-6 md:grid-cols-2">
-      <div className="border">
-        <h1>If you dont have an account Please regiser first</h1>
+      <div>
+        <h1 className="roboto text-3xl font-semibold mt-10">Join Us at Star Line Land Hospitality – Your Journey Begins Here!</h1>
+        <p className="text-base text-[#949494] my-4">Register now and unlock exclusive offers at Star Line Land Hospitality. Enjoy luxurious amenities, personalized services, and unforgettable experiences tailored to your needs. Start your adventure with us today!</p>
         <img className="w-full" src={img} alt="" />
       </div>
-      <div className="border">
+      <div>
         <div className="w-full max-w-md mx-auto p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
           <h1 className="text-2xl font-bold text-center">Register</h1>
           <form

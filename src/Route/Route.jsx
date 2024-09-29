@@ -4,12 +4,13 @@ import Root from '../Root/Root';
 import Home from '../Component/Home';
 import FetureDetails from '../Pages/FetureDetails';
 import ErrorPage from '../Component/ErrorPage';
-import Blogs from '../Pages/Blogs';
 import About from '../Pages/About';
 import Contract from '../Pages/Contract';
 import Login from '../Authentication/Login';
 import Register from '../Authentication/Register';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import Blogs from '../Pages/Blogs';
+import BlogDetails from '../Pages/BlogDetails';
 
 const Route = createBrowserRouter([
     {
@@ -30,6 +31,11 @@ const Route = createBrowserRouter([
         {
           path: '/blog',
           element: <Blogs></Blogs>,
+          loader: () => fetch(`../blogs.json`)
+        },
+        {
+          path: '/:id',
+          element: <BlogDetails></BlogDetails>,
           loader: () => fetch(`../blogs.json`)
         },
         {
