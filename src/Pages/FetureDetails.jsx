@@ -9,7 +9,7 @@ const FetureDetails = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <div className="grid md:grid-cols-2 gap-6 my-10 bg-gray-100">
-        <div className="">
+        <div>
           <figure>
             <img className="w-full h-full" src={feature.image} alt="" />
           </figure>

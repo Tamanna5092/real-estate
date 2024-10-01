@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUserProfile } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
   const [registerError, setRegisterError] = useState("");
 
@@ -15,6 +15,7 @@ const Register = () => {
     e.preventDefault();
     const username = e.target.username.value;
     const email = e.target.email.value;
+    const photo = e.target.photoURL.value;
     const password = e.target.password.value;
     const confirmPassword = e.target.confirm_password.value;
 
@@ -35,6 +36,7 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
+        updateUserProfile(username, photo).then(() => {});
         console.log(result.user);
         toast("Successfully Register!");
       })
@@ -46,9 +48,16 @@ const Register = () => {
 
   return (
     <div className="max-w-7xl mx-auto grid gap-6 md:grid-cols-2">
-      <div>
-        <h1 className="roboto text-3xl font-semibold mt-10">Join Us at Star Line Land Hospitality – Your Journey Begins Here!</h1>
-        <p className="text-base text-[#949494] my-4">Register now and unlock exclusive offers at Star Line Land Hospitality. Enjoy luxurious amenities, personalized services, and unforgettable experiences tailored to your needs. Start your adventure with us today!</p>
+      <div className="ml-2 lg:ml-0">
+        <h1 className="roboto text-3xl font-semibold mt-10">
+          Join Us at Star Line Land Hospitality – Your Journey Begins Here!
+        </h1>
+        <p className="text-base text-[#949494] my-4">
+          Register now and unlock exclusive offers at Star Line Land
+          Hospitality. Enjoy luxurious amenities, personalized services, and
+          unforgettable experiences tailored to your needs. Start your adventure
+          with us today!
+        </p>
         <img className="w-full" src={img} alt="" />
       </div>
       <div>

@@ -12,9 +12,6 @@ const Navbar = () => {
         <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
-        <NavLink to={"/register"}>Register</NavLink>
-      </li>
-      <li>
         <NavLink to={"/about"}>About</NavLink>
       </li>
       <li>
@@ -23,10 +20,13 @@ const Navbar = () => {
       <li>
         <NavLink to={"/contract"}>Contract Us</NavLink>
       </li>
+      <li>
+        <NavLink to={"/profile"}>User Info</NavLink>
+      </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 px-2 lg:px-4">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,9 +61,27 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <button onClick={() => signOutUser()} className="btn">
-            {user.email}Sign Out
-          </button>
+          <p className="inline-flex items-center gap-2">
+            {user.photoURL ? (
+              <div className="avatar">
+                <div className="w-12 rounded-full">
+                  <img src={user.photoURL} alt="user_profile" />
+                </div>
+              </div>
+            ) : (
+              <img
+                className="w-12"
+                src="https://png.pngtree.com/png-clipart/20231104/original/pngtree-happy-corporate-business-professional-one-man-clipart-white-background-png-image_13504468.png"
+                alt=""
+              />
+            )}
+            <button
+              onClick={() => signOutUser()}
+              className="btn text-white bg-red-500 px-6 font-bold montserrat hover:bg-gray-800"
+            >
+              Sign Out
+            </button>
+          </p>
         ) : (
           <Link
             to={"/login"}
