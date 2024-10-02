@@ -39,14 +39,15 @@ const Contract = () => {
       {/* message */}
       <div className="grid max-w-7xl mx-auto sm:grid-cols-1 md:grid-cols-2 gap-6 my-20">
         <div className="px-3 lg:px-0">
-          <h1 className="roboto text-5xl font-extrabold my-6 animate__animated animate__backInLeft">
+          <h1 className="roboto text-5xl font-extrabold my-6 animate__animated animate__backInLeft px-4 md:0">
             We provide the most suitable and quality hospitality.
           </h1>
-          <p className="text-base text-[#949494] animate__animated animate__backInLeft">
+          <p className="text-base text-[#949494] animate__animated animate__backInLeft px-4 md:0">
             We provide the most suitable and high-quality hospitality, ensuring
             that every guest enjoys a comfortable, memorable, and exceptional
             experience tailored to their needs.
           </p>
+          <div className="px-4 md:0">
           <div className="flex items-center gap-10 my-10">
             <div>
               <GrMapLocation className="w-10 h-10 text-[#949494]"></GrMapLocation>
@@ -81,6 +82,7 @@ const Contract = () => {
               <p className="text-lg text-[#949494] font-extrabold">Email us</p>
               <p className="text-lg text-[#ffa920]">hellosupport@gmail.com</p>
             </div>
+          </div>
           </div>
         </div>
         <div className="hidden md:block">

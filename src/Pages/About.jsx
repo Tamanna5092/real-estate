@@ -14,7 +14,7 @@ const About = () => {
       <h1 className="roboto text-3xl text-center font-semibold mt-10 animate__animated animate__zoomIn">
         A Few Words About Our Company
       </h1>
-      <p className="text-base text-[#949494] mt-6 animate__animated animate__zoomIn">
+      <p className="text-base text-[#949494] mt-6 animate__animated animate__zoomIn px-4 md:0">
         Our company is dedicated to providing exceptional hospitality services,
         ensuring that every guest enjoys a memorable experience. With a
         commitment to excellence, we offer a range of accommodations, from
