@@ -5,7 +5,7 @@ import { LuPhoneCall } from "react-icons/lu";
 
 const Agent = () => {
   return (
-    <div className="grid md:grid-cols-1 lg:grid-cols-2">
+    <div className="grid my-20 md:grid-cols-1 lg:grid-cols-2">
       <div className="px-10 py-28">
         <div className="">
           <h1 className="roboto text-3xl text-center font-semibold">

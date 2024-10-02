@@ -3,7 +3,7 @@ import img from "../assets/Asset2.png";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center text-white bg-neutral mt-20 p-10">
+    <footer className="footer footer-center text-white bg-neutral p-10">
       <aside>
         <img className="w-48" src={img} alt="" />
         <p className="font-bold">Providing reliable tech since 2009</p>
