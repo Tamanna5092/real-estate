@@ -16,7 +16,7 @@ const Blog = ({ blog }) => {
             <img
               src={image}
               alt=""
-              className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
+              className="object-cover w-full h-64 cursor-default rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
             />
             <Link
               to={`/${id}`}
