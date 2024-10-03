@@ -27,7 +27,7 @@ const BlogDetails = () => {
             </a>
             <div className="flex gap-6 items-center">
               <img
-                className="w-20 h-20 rounded-full"
+                className="w-20 h-20 rounded-full animate__animated animate__zoomIn"
                 src={blog.author_image}
                 alt=""
               />

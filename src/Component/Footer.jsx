@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <h1 className="roboto text-[#949494]">Branch Office</h1>
+          <h1 className="roboto text-[#949494] mt-4">Branch Office</h1>
           <p className="font-bold mt-2">
             Willis Tower  
             233 S Wacker Dr <br /> 

@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow"
           >
             {navLinks}
           </ul>
@@ -63,10 +63,13 @@ const Navbar = () => {
         {user ? (
           <p className="inline-flex items-center gap-2">
             {user.photoURL ? (
-              <div className="avatar">
+              <div className="avatar cursor-pointer group">
                 <div className="w-12 rounded-full">
                   <img src={user.photoURL} alt="user_profile" />
                 </div>
+                <span className="absolute roboto left-1/2 -translate-x-1/2 translate-y-10 bg-gray-700 text-white text-sm rounded px-2 py-1 z-[2] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      {user.displayName}
+    </span>
               </div>
             ) : (
               <img

@@ -11,7 +11,7 @@ const Blog = ({ blog }) => {
           <a
             rel="noopener noreferrer"
             href="#"
-            className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50"
+            className="block gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50"
           >
             <img
               src={image}

@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Feature = ({ estate }) => {
   const { segment_name, status, image, area, location, id, land_size, price } =
     estate;
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+      });
+    }, []);
+
   return (
     <div className="px-8 md:px-0">
       <div className="card card-compact bg-base-100 h-[580px] shadow-xl">
         <figure>
-          <img className="w-full h-[270px]" src={image} alt="" />
+          <img data-aos="zoom-in" className="w-full h-[270px]" src={image} alt="" />
         </figure>
         <div className="p-6 text-base">
           <p className="roboto text-3xl font-bold mb-4">{segment_name}</p>

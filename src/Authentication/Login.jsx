@@ -4,7 +4,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
-const Login = () => {
+const Login = ({ user }) => {
   const { logInUser, googleLogin, githubLogin, twitterLogin } =
     useContext(AuthContext);
   const [loginError, setLoginError] = useState("");
@@ -20,16 +20,17 @@ const Login = () => {
 
     setLoginError("");
 
-    logInUser(email, password).then((result) => {
-      if (result.user) {
-        navigate(from);
-      }
-      toast("Login successfully!");
-    });
-    console.log(result.user).catch((error) => {
-      console.error(error);
-      setLoginError("Please input a valid password.");
-    });
+    logInUser(email, password)
+      .then((result) => {
+        if (result.user) {
+          navigate(from);
+        }
+        toast("Login successfully!");
+      })
+      .catch((error) => {
+        console.error(error);
+        setLoginError("Please input a valid password.");
+      });
   };
 
   const handleSocialLogin = (socialProvider) => {

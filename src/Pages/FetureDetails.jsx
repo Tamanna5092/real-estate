@@ -11,7 +11,7 @@ const FetureDetails = () => {
       <div className="grid md:grid-cols-2 gap-6 my-10 bg-gray-100">
         <div>
           <figure>
-            <img className="w-full h-full" src={feature.image} alt="" />
+            <img data-aos="zoom-in" className="w-full h-full" src={feature.image} alt="" />
           </figure>
         </div>
         <div className=" p-4">

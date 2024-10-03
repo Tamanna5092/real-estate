@@ -11,7 +11,7 @@ const Profile = () => {
         <p className="text-xl text-[#949494] my-2">Email: <span className="text-[#ffa920]">{user.email}</span></p>
         <p className="text-base text-[#949494]">User create time: <span className="text-[#ffa920]">{user.metadata.creationTime}</span></p>
         <p className="text-base text-[#949494] my-2">Last sign in: <span className="text-[#ffa920]">{user.metadata.lastSignInTime}</span></p>
-         <img src={user.photoURL} alt="" />
+         <img data-aos="zoom-in" src={user.photoURL} alt="" />
       </div>
     </div>
   );
