@@ -38,6 +38,7 @@ const Register = () => {
       .then((result) => {
         updateUserProfile(username, photo).then(() => {});
         console.log(result.user);
+        e.target.reset()
         toast("Successfully Register!");
       })
       .catch((error) => {
